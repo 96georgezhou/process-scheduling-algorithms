@@ -1,6 +1,8 @@
 # Summary
 In my Operating Systems class (CSS 430), our homework 2 assignment was to implement process scheduling algorithms on top of the school's ThreadOS. ThreadOS is a emulated operating system based in Java. It was built by the school to help students conceptualize the operations that go on at the OS-level of the computer.
 
+This assignment implements two process scheduling algorithms on top of ThreadOS. The names of the algorithms are the Round Robin and the Multi-Level Feedback Queue. There are a set of test programs that get called to simulate the variable times that some process take to complete execution. At the end of each algorithm section, I present screenshots of the results so that you can see how long each process took to complete execution, etc.
+
 Feel free to read the school's full spec for this assignment [here](http://courses.washington.edu/css430/prog/prog2.html).
 
 # Algorithms
