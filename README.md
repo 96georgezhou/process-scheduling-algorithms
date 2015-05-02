@@ -10,7 +10,7 @@ This section will go over the two scheduling algorithms that we implemented in t
 Although `suspend()` and `resume()` are deprecated Java methods, we still learned them so that we could compare the performance of the different scheduling algorithms.
 
 ### Performance Results
-![Performance Results](https://raw.githubusercontent.com/brunnerjosh/68k-disassembler/master/Flowchart%20v0.jpg)
+![Performance Results](https://raw.githubusercontent.com/brunnerjosh/process-scheduling-algorithms/master/images/round-robin-output.png)
 
 ## Multi-Level Feedback Queue (MLFQ)
 The MLQS algorithm utilizes three separate queues (queue0, queue1, and queue2). Each queue serves a slightly separate purpose throughout the scheduler’s use.
@@ -26,14 +26,14 @@ If this process still hasn’t completed, it is moved to queue2 where it is allo
 *Please see the flowchart section below for a visual description of the multi-level queue scheduling algorithm*
 
 ### Performance Results
-![Performance Results](https://raw.githubusercontent.com/brunnerjosh/68k-disassembler/master/Flowchart%20v0.jpg)
+![Performance Results](https://raw.githubusercontent.com/brunnerjosh/process-scheduling-algorithms/master/images/mlfq-output.png)
 
 ### Flowchart
-![Flow Chart](https://raw.githubusercontent.com/brunnerjosh/68k-disassembler/master/Flowchart%20v0.jpg)
+![Flow Chart](https://raw.githubusercontent.com/brunnerjosh/process-scheduling-algorithms/master/images/mlfqs-flowchart.png)
 
 # Execution Chart
 This chart shows a breakdown of the processes (Pa, Pb, Pc, Pd, Pe, Test2, and the Scheduler) over the course of their completion while in the MLFQ.
-![Execution Chart](https://raw.githubusercontent.com/brunnerjosh/68k-disassembler/master/Flowchart%20v0.jpg)
+![Execution Chart](https://raw.githubusercontent.com/brunnerjosh/process-scheduling-algorithms/master/images/mlfq-algorithm-process.png)
 
 # Discussion
 By utilizing three separate queues with three separate time quantum, the MLQS algorithm appears to have outperformed the Round Robin (suspend/resume) algorithm quite greatly. In the Comparison Results section below, you can see that the green boxes show improvement in processing while red boxes show decreases in processing when the MLQS algorithm is used against Test2.java.
@@ -41,4 +41,4 @@ By utilizing three separate queues with three separate time quantum, the MLQS al
 The reason the MLQS performs better than the RR (suspend/resume) algorithm is because most of the processes start and finish within 2 queues. The rest get pushed down to the third queue (queue2), where larger timeSlices allow for large chunks of their CPU burst to be processed.
 
 ## Comparison Results
-![Comparison Results](https://raw.githubusercontent.com/brunnerjosh/68k-disassembler/master/Flowchart%20v0.jpg)
+![Comparison Results](https://raw.githubusercontent.com/brunnerjosh/process-scheduling-algorithms/master/images/comparison-chart.png)
