@@ -29,7 +29,7 @@ If this process still hasn’t completed, it is moved to queue2 where it is allo
 ![Performance Results](https://raw.githubusercontent.com/brunnerjosh/process-scheduling-algorithms/master/images/mlfq-output.png)
 
 ### Flowchart
-![Flow Chart](https://raw.githubusercontent.com/brunnerjosh/process-scheduling-algorithms/master/images/mlfqs-flowchart.png)
+![Flow Chart](https://raw.githubusercontent.com/brunnerjosh/process-scheduling-algorithms/master/images/mlqs-flowchart.jpg)
 
 # Execution Chart
 This chart shows a breakdown of the processes (Pa, Pb, Pc, Pd, Pe, Test2, and the Scheduler) over the course of their completion while in the MLFQ.
